@@ -120,6 +120,7 @@ header {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     transition: .6s ease;
+    background: var(--body-bg-color);
 }
 
 /* Make header with shadow after scroll */
@@ -400,7 +401,7 @@ header.sticky .nav-bar{
         max-width: 1150px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0rem 2rem 2rem;
+        padding: 0rem 0rem 0rem;
     }
 
     .about-model {
@@ -412,6 +413,7 @@ header.sticky .nav-bar{
         left: 0;
         background: var(--transparent-color-01);
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         visibility: hidden;
         opacity: 0;
         transition: .3s ease;
@@ -430,8 +432,8 @@ header.sticky .nav-bar{
         max-width: 100vw;
         max-height: 100vh;
    
-        margin: 20px;
-        padding: 40px;
+        /* margin: 10px;*/
+        padding: 20px; 
         border-radius: 10px;
         box-shadow: var(--box-shadow);
         transform: translateY(-50px);
@@ -447,6 +449,7 @@ header.sticky .nav-bar{
         top: 0;
         right: 0;
         margin: 20px;
+        z-index: 9999999;
         
         cursor: pointer;
     }
@@ -454,12 +457,38 @@ header.sticky .nav-bar{
     .about-model-body h3 {
         font-size: 1.5em;
     }
+
     
     .about-model-body img {
         width: 90%;
         margin: 20px 0;
         border-radius: 10px;
     } 
+
+    .about-model.flex-center.active .section-title-01 {
+        margin-top: 40px;
+    }
+
+    .about-model.flex-center.active .about-info {
+        margin-right: 20px;
+    }
+
+    .about-btn {
+        background: var(--second-color);
+        color: #fff;
+        font-size: var(--normal-font-size);
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 25px;
+        padding: 20px 30px;
+        letter-spacing: 1px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .about-btn:hover {
+        background: var(--hover-color);
+    }
 
 
 /* Skills & Experience section */
@@ -706,6 +735,7 @@ header.sticky .nav-bar{
     left: 0;
     background: var(--bg-transparent-color);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     visibility: hidden;
     opacity: 0;
     transition: .3s ease;
@@ -828,6 +858,7 @@ header.sticky .nav-bar{
     left: 0;
     background: var(--transparent-color-01);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     visibility: hidden;
     opacity: 0;
     transition: .3s ease;
@@ -1305,6 +1336,7 @@ footer a {
     top: 100px;
     background: var(--transparent-color-01);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     width: 50px;
     height: 50px;
     font-size: 1.2em;
@@ -1495,7 +1527,7 @@ footer a {
 
     .home-container .home-img img {
         width: 65%;
-        transform: translate(80px, -180px);
+        transform: translate(60px, -70px);
     }
 
     .home .home-container .info {
@@ -1506,9 +1538,8 @@ footer a {
         margin-bottom: 0px;
     }
 
-    
-
 }
+
 
 /* Animation Test */
 .about-model.flex-center.active .about-info .description {
@@ -1532,9 +1563,9 @@ footer a {
     animation: superman-fly-right ease-in-out 0.7s forwards;
 }
 
-.about-model.flex-center.active .section-title-01 {
+/* .about-model.flex-center.active .section-title-01 {
     animation: superman-fly-right ease-in-out 1s forwards;
-}
+} */
 
 
 
