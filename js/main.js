@@ -190,3 +190,8 @@ ScrollReveal().reveal('.experience-card, .certs-card, .education, .portfolio .im
 ScrollReveal().reveal('#contact', { delay: 300, origin: 'bottom', interval: 100});
 // ScrollReveal().reveal('.footer-copyright p', { delay: 300, origin: 'bottom', interval: 100});
 
+function redirect() {
+    if(confirm("Message function not ready, contact me on Linkedin?")){
+        window.open("https://www.linkedin.com/in/felixku/","_blank");
+    }else {};
+};
