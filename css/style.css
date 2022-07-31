@@ -1523,11 +1523,12 @@ footer a {
 
     .home-container .home-img {
         position: absolute;
+        /* width: 70% */
     }
 
     .home-container .home-img img {
         width: 65%;
-        transform: translate(60px, -70px);
+        transform: translate(60px, -75px);
     }
 
     .home .home-container .info {
