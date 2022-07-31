@@ -1,0 +1,27 @@
+flex
+em
+fontawesome
+<i></i>
+backdrop-filter
+padding vs margin
+
+
+// Exit when click outside menu
+const menuBtn = document.querySelector(".nav-menu-btn");
+const menucloseBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+const navItems = document.querySelectorAll(".nav-items a");
+    
+
+menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+    var activeNav = document.querySelector(".navigation.active");
+    if (activeNav){
+        activeNav.addEventListener("click", (e) => {
+            if(e.target !== e.currentTarget) return;
+            navigation.classList.remove("active");
+        });
+    }
+});
+
+
