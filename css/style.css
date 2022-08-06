@@ -204,6 +204,10 @@ header.sticky .nav-bar{
     color: var(--hover-color);
 }
 
+.home .home-container .info {
+    z-index: 999;
+}
+
 .home-container .info h2 {
     font-size: 4em;
     font-weight: 600;
@@ -835,12 +839,12 @@ header.sticky .nav-bar{
 .portfolio-list .img-card .info {
     z-index: 678;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     margin: 20px;
     color: #fff;
     transform: translateY(20px);
-    opacity: 0;
+    opacity: 1;
     transition: .5s ease;
 }
 
